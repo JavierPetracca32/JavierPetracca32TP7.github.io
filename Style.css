@@ -1,0 +1,75 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 5px;
+
+   background-color: #070707;
+   align-items: center;
+   padding: 5px;
+  }
+
+
+ 
+.item1 {
+  align-items: center;
+  background-color: #f40808;
+  padding: 50% }
+
+.item2 {
+  vertical-align: middle;
+  background-color: #1e17e0;
+  padding: 50%
+}
+
+.item3 {
+  vertical-align: middle;
+  background-color: #9608f4;
+  padding: 50%
+ }
+
+ @media (min-width: 321px){
+.item4 {
+  background-color: #08f476;
+  padding: 50%
+}
+
+.item5 {
+  background-color: #bdf408;
+  padding: 50%
+}
+
+.item6 {
+  background-color: #f40872;
+  padding: 50%
+}}
+
+@media (min-width: 769px){
+.item7 {
+  background-color: #f4bd08;
+  padding: 50%
+}
+
+.item8 {
+  background-color: #ff9f03;
+  padding: 50%
+}
+
+.item9 {
+  vertical-align: middle;
+  background-color: #1c2545;
+  padding: 50%
+}}
+
+
+@media (max-width: 320px){ .container{
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(3, 1fr);}}
+
+  @media (min-width: 321px) and (max-width: 768px){ .container{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);}}    
+   
+    @media (min-width: 769px){ .container{
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);}}  
